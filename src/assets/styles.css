@@ -1,13 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
 @font-face {
   font-family: "Lobster";
-  src: url("assets/css/font/Lobster 1.4.otf");
+  src: url("font/Lobster 1.4.otf");
 }
 @font-face {
   font-family: "Finger";
-  src: url("assets/css/font/Finger.ttf");
+  src: url("font/Finger.ttf");
 }
 /**/
 * {
@@ -19,7 +16,6 @@ html, body { height: 100%; }
 body {
   font-family: "Lobster", Arial, Helvetica;
   font-size: 20px;
-  background: url("assets/img/pattern.png");
+  background: url("../img/pattern.png");
   background-attachment: fixed;
 }
-
