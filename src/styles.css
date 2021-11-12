@@ -23,7 +23,6 @@ body {
   color: azure;
 }
 #banner{
-
   text-align: center;
   height: 100px;
   margin-top: 5 px;
@@ -35,6 +34,10 @@ body {
   position: fixed;
   display: block;
   width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  box-decoration-break: none;
+  -webkit-box-decoration-break: none;
 
 }
 #botonera {
