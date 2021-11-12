@@ -1,28 +1,54 @@
 <div id="container">
-  <div id="banner">PencandoConDondi</div>
-
-  <header>
+  <span id="header">
+  <div id="banner">Pescando Con Dondi</div>
     <div id="botonera">
-      Botonera
       <ul>
+        <li id="logo"><a [routerLink]="['']">
+
+          <div class="example-button-row">
+          <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+            <mat-icon [ngStyle]="{'color':'white'}">home</mat-icon>
+          </button>
+          </div>
+        </a></li>
         <li>
-          <a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']"
-            >Represas</a
-          >
+          <a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">
+            Represas
+            <!--
+            <button mat-button [matMenuTriggerFor]="menu">Represas</button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Playas</button>
+              <button mat-menu-item>Jaguas</button>
+            </mat-menu>-->
+          </a>
         </li>
         <li>
-          <a [routerLink]="['/contactenos']" [routerLinkActive]="['actived']"
-            >Contactenos</a
-          >
+          <a [routerLink]="['/servicios']" [routerLinkActive]="['actived']">
+            Servicios
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/galeria']" [routerLinkActive]="['actived']">
+            Galeria
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/nuestro-equipo']" [routerLinkActive]="['actived']">
+            Nuestro Equipo
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/contactenos']" [routerLinkActive]="['actived']">
+            Contactenos
+          </a>
         </li>
       </ul>
     </div>
-  </header>
+  </span>
   <div id="manejador">
-    Manejador
     <section id="content">
       <router-outlet></router-outlet>
     </section>
   </div>
-  <footer id="">Eso es todo amigos</footer>
+  <footer id="">Copy Right JSA</footer>
 </div>

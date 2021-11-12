@@ -18,8 +18,91 @@ html, body { height: 100%; }
 /*Estilos generales*/
 body {
   font-family: "Lobster", Arial, Helvetica;
-  font-size: 20px;
   background: url("assets/img/pattern.png");
   background-attachment: fixed;
+  color: azure;
+}
+#banner{
+
+  text-align: center;
+  height: 100px;
+  margin-top: 5 px;
+  font-size: 80px;
+  padding-bottom: 5px;
+  background: rgba(1, 27, 5, 0.8);
+}
+#header{
+  position: fixed;
+  display: block;
+  width: 100%;
+
+}
+#botonera {
+  width: 100%;
+  height: 70px;
+  background: rgba(12, 124, 27, 0.8);
+  position: fixed;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Finger", Arial, Helvetica;
 }
 
+#botonera li {
+  display: inline-block;
+  line-height: 70px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+#botonera ul {
+  display: block;
+  width: 78%;
+  height: inherit;
+  margin: 0px auto;
+  margin-top: -5px;
+}
+#botonera ul li a {
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  transition: all 300ms;
+  line-height: 70px;
+}
+#botonera a:hover,
+.actived {
+  background: rgba(1, 27, 5, 0.8);
+}
+#logo a:hover {
+  background: transparent;
+  color: rgba(1, 27, 5, 0.8);
+  transform: scale(1.5, 1.5);
+}
+#logo a {
+  transition: color 500ms, transform 500ms;
+}
+#logo {
+  font-size: 30px;
+  font-family: "Finger";
+}
+/*Contenedor*/
+#content {
+  min-height: 600px;
+  border-left: 1px solid #b7b7b7;
+  border-right: 1px solid #b7b7b7;
+  padding-top: 170px;
+  width: 75%;
+  margin: 0px auto;
+  box-shadow: 0px 10px 40px #132b16;
+  /*background: rgba(255, 255, 255, 0.7);*/
+  background: rgba(166, 189, 167, 0.5);
+}
+/*Pie de pagina*/
+footer {
+  width: 75%;
+  margin: 0px auto;
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
