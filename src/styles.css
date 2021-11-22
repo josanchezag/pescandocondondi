@@ -9,6 +9,10 @@ html, body { height: 100%; }
   font-family: "Finger";
   src: url("assets/css/font/Finger.ttf");
 }
+@font-face {
+  font-family: "Yanone";
+  src: url("assets/css/font/Yanone.ttf");
+}
 /**/
 * {
   margin: 0px;
@@ -24,11 +28,16 @@ body {
 }
 #banner{
   text-align: center;
-  height: 100px;
+  height: 120px;
   margin-top: 5 px;
   font-size: 80px;
   padding-bottom: 5px;
   background: rgba(1, 27, 5, 0.8);
+}#banner img{
+  float: left;
+  width: 120px;
+  margin-top:  -10px;
+
 }
 #header{
   position: fixed;
@@ -92,15 +101,16 @@ body {
 }
 /*Contenedor*/
 #content {
-  min-height: 600px;
+  min-height: 700px;
   border-left: 1px solid #b7b7b7;
   border-right: 1px solid #b7b7b7;
-  padding-top: 180px;
-  width: 75%;
+  padding-top: 200px;
+  width: 90%;
   margin: 0px auto;
   box-shadow: 0px 5px 40px #132b16;
   /*background: rgba(255, 255, 255, 0.7);*/
   background: rgba(166, 189, 167, 0.5);
+  font-family: Arial, Helvetica;
 }
 /*Pie de pagina*/
 footer {
