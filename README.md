@@ -1,27 +1,52 @@
-# Pescandocondondi
+# Pescando con Dondi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+A web application for a sport fishing lodge micro-business located in San Rafael, Antioquia, Colombia.
 
-## Development server
+## About the Project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Pescando con Dondi** is a simple informational website built to promote a sport fishing lodge experience in the reservoirs of San Rafael, Antioquia. The site provides visitors with everything they need to know about the fishing spots, the fish species available, the services offered, and how to get in touch.
 
-## Code scaffolding
+### Pages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Route | Description |
+|-------|-------------|
+| `/` | About us — overview of the lodge and its story |
+| `/represas` | Reservoirs — information about the fishing spots and available fish species |
+| `/servicios` | Services — packages and offerings |
+| `/galeria` | Gallery — photos of the lodge and catches |
+| `/nuestro-equipo` | Our team |
+| `/contactenos` | Contact — how to reach us |
+
+## Tech Stack
+
+- **Framework:** Angular 13
+- **UI:** Angular Material
+- **Language:** TypeScript
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the dev server:
+
+```bash
+npm start
+```
+
+Navigate to `http://localhost:4200/`. The app reloads automatically on file changes.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm run build
+```
 
-## Running unit tests
+The build output is stored in the `dist/` directory.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## About This Repository
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project was originally built from scratch without AI assistance. It is publicly available on GitHub as a portfolio piece to showcase frontend development skills in interviews.
