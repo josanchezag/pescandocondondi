@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-represas',
   templateUrl: './represas.component.html',
   styleUrls: ['./represas.component.css'],
-  standalone: false
+  standalone: true
 })
 export class RepresasComponent implements OnInit {
 

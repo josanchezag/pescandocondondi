@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
   styleUrls: ['./galeria.component.css'],
-  standalone: false
+  standalone: true
 })
 export class GaleriaComponent implements OnInit {
 

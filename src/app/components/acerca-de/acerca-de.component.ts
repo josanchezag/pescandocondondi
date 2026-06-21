@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-acerca-de',
   templateUrl: './acerca-de.component.html',
   styleUrls: ['./acerca-de.component.css'],
-  standalone: false
+  standalone: true
 })
 export class AcercaDeComponent implements OnInit {
 

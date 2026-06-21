@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-contactenos',
   templateUrl: './contactenos.component.html',
   styleUrls: ['./contactenos.component.css'],
-  standalone: false
+  standalone: true
 })
 export class ContactenosComponent implements OnInit {
 
