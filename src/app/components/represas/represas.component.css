@@ -12,13 +12,20 @@
   border-bottom: 2px solid var(--lima-alpha);
 }
 
+/* ── Grid de dos represas ── */
+.represas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
 /* ── Card de represa ── */
 .represa-card {
   background: rgba(26, 58, 36, 0.38);
   border: 1px solid var(--lima-alpha);
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 36px;
 }
 
 /* Hero image */
@@ -77,7 +84,8 @@
 }
 
 /* ── Sección de especies ── */
-.represa-especies {
+.represa-especies,
+.especies-section {
   padding: 20px 24px 24px;
 }
 .especies-titulo {
@@ -92,7 +100,7 @@
 /* Grid de species cards */
 .especies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -109,7 +117,7 @@
 }
 .especie-card img {
   width: 100%;
-  height: 175px;
+  height: 260px;
   object-fit: cover;
   display: block;
 }
