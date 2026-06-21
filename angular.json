@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pescandocondondi:build:production"
+              "buildTarget": "pescandocondondi:build:production"
             },
             "development": {
-              "browserTarget": "pescandocondondi:build:development"
+              "buildTarget": "pescandocondondi:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pescandocondondi:build"
+            "buildTarget": "pescandocondondi:build"
           }
         },
         "test": {
