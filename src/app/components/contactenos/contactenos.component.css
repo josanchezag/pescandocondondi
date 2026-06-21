@@ -1,0 +1,126 @@
+.contactenos-page {
+  font-family: "Yanone", Arial, Helvetica;
+}
+
+.page-title {
+  font-family: "Lobster", cursive;
+  font-size: 2.2rem;
+  color: var(--lima);
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--lima-alpha);
+}
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1.08rem;
+  margin-bottom: 36px;
+}
+
+/* ── Cards de WhatsApp ── */
+.contactos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.contacto-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(26, 58, 36, 0.45);
+  border: 1px solid var(--lima-alpha);
+  border-radius: 14px;
+  padding: 28px 24px;
+  text-decoration: none;
+  transition: transform 200ms, box-shadow 200ms, border-color 200ms;
+}
+.contacto-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.25);
+  border-color: #25d366;
+}
+
+.contacto-icono {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacto-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.contacto-numero {
+  font-family: "Lobster", cursive;
+  font-size: 1.6rem;
+  color: var(--blanco);
+}
+.contacto-accion {
+  font-size: 0.9rem;
+  color: #25d366;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contacto-accion i {
+  transition: transform 200ms;
+}
+.contacto-card:hover .contacto-accion i {
+  transform: translateX(4px);
+}
+
+/* ── Sección redes sociales ── */
+.redes-section {
+  text-align: center;
+}
+.redes-titulo {
+  font-family: "Lobster", cursive;
+  font-size: 1.7rem;
+  color: var(--lima);
+  margin-bottom: 20px;
+}
+
+.redes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.red-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: rgba(26, 58, 36, 0.42);
+  border: 1px solid var(--lima-alpha);
+  border-radius: 12px;
+  padding: 20px 28px;
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 0.95rem;
+  transition: transform 200ms, background 200ms, border-color 200ms;
+}
+.red-card i {
+  font-size: 2rem;
+  color: var(--lima);
+}
+.red-card:hover {
+  transform: translateY(-3px);
+  background: rgba(26, 58, 36, 0.7);
+  border-color: var(--lima);
+}

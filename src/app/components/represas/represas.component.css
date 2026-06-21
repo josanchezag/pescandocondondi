@@ -1,68 +1,153 @@
-.grid-container {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+.represas-page {
   font-family: "Yanone", Arial, Helvetica;
-  min-height: 1200px;
-  margin: 0 auto;
-  grid-gap: 20px;
-  font-size: larger;
-}
-.grid-represa{
-  display: grid;
-  grid-template-columns: 10% auto;
-  grid-template-rows: 30% 5% 10% auto;
-  width: 95%;
-  margin: 0 auto;
-  padding: 3px;
-}
-.grid-represa-foto{
-  grid-column: 1 / span 2;
 }
 
-.grid-represa-foto img {
+/* ── Título de página ── */
+.page-title {
+  font-family: "Lobster", cursive;
+  font-size: 2.2rem;
+  color: var(--lima);
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--lima-alpha);
+}
+
+/* ── Card de represa ── */
+.represa-card {
+  background: rgba(26, 58, 36, 0.38);
+  border: 1px solid var(--lima-alpha);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 36px;
+}
+
+/* Hero image */
+.represa-hero {
+  position: relative;
+  height: 300px;
+}
+.represa-hero img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.grid-represa-clave{
-  background: rgba(1, 27, 5, 0.9);
-  text-align: center;
+.represa-hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(26, 58, 36, 0.92));
+  padding: 32px 24px 16px;
+}
+.represa-nombre {
+  font-family: "Lobster", cursive;
+  font-size: 1.8rem;
+  color: var(--lima);
+}
+
+/* Info rows */
+.represa-info {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--lima-alpha);
+}
+.info-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.info-label {
+  background: var(--verde-oscuro);
+  color: var(--lima);
   font-weight: bold;
   text-transform: uppercase;
-  padding: 5px 5px;
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+  border: 1px solid var(--lima-alpha);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.info-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
 
+/* ── Sección de especies ── */
+.represa-especies {
+  padding: 20px 24px 24px;
 }
-.grid-represa-valor{
-  padding: 5px 8px;
+.especies-titulo {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: var(--lima);
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--lima-alpha);
 }
-.grid-represa-especie-container{
+
+/* Grid de species cards */
+.especies-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
-  grid-gap: 5px;
-  padding: 3px;
-  width: 99%;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
 }
-.grid-represa-especie{
-  display: grid;
-  grid-template-columns: 18% auto;
-  grid-template-rows: 45% 8% auto;
-  width: 95%;
-  margin: 0 auto;
-  padding: 5px;
-  border: 0.5px rgba(1, 27, 5, 0.9) solid;
+
+.especie-card {
+  background: rgba(26, 58, 36, 0.55);
+  border: 1px solid var(--lima-alpha);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 200ms, box-shadow 200ms;
 }
-.grid-represa-especie-foto{
-  grid-column: 1 / span 2;
+.especie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
 }
-.grid-represa-especie-clave{
-  background: rgba(1, 27, 5, 0.7);
-  text-align: left;
-  padding: 3px;
-}
-.grid-represa-especie-valor{
-  padding: 3px 10px;
-}
-.grid-represa-especie-foto img {
+.especie-card img {
   width: 100%;
-  height: 100%;
+  height: 175px;
+  object-fit: cover;
+  display: block;
+}
+.especie-body {
+  padding: 14px 16px 16px;
+}
+.especie-nombre {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--lima);
+  margin-bottom: 2px;
+}
+.especie-cientifico {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 10px;
+}
+.especie-desc {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+/* ── Placeholder próxima represa ── */
+.represa-proximamente {
+  border: 1.5px dashed var(--lima-alpha);
+  border-radius: 12px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.represa-proximamente i {
+  font-size: 1.5rem;
+  color: var(--lima-alpha);
 }

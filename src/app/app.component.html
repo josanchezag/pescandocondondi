@@ -1,54 +1,50 @@
-<div id="container">
-  <span id="header">
-  <div id="banner"><img src="../assets/img/Logo.png"/> La Fortuna Fish</div>
-    <div id="botonera">
-      <ul>
-        <li id="logo"><a [routerLink]="['']">
+<nav id="navbar">
+  <a class="nav-brand" [routerLink]="['/']">
+    <img src="assets/img/Logo.png" alt="La Fortuna Fishing" />
+    <span class="nav-brand-name">La Fortuna Fishing</span>
+  </a>
 
-          <div class="example-button-row">
-          <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
-            <mat-icon [ngStyle]="{'color':'white'}" >home</mat-icon>
-          </button>
-          </div>
-        </a></li>
-        <li>
-          <a [routerLink]="['/represas']" [routerLinkActive]="['actived']">
-            Represas
-            <!--
-            <button mat-button [matMenuTriggerFor]="menu">Represas</button>
-            <mat-menu #menu="matMenu">
-              <button mat-menu-item>Playas</button>
-              <button mat-menu-item>Jaguas</button>
-            </mat-menu>-->
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/servicios']" [routerLinkActive]="['actived']">
-            Servicios
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/galeria']" [routerLinkActive]="['actived']">
-            Galeria
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/nuestro-equipo']" [routerLinkActive]="['actived']">
-            Nuestro Equipo
-          </a>
-        </li>
-        <li>
-          <a [routerLink]="['/contactenos']" [routerLinkActive]="['actived']">
-            Contactenos
-          </a>
-        </li>
-      </ul>
-    </div>
-  </span>
-  <div id="manejador">
-    <section id="content">
-      <router-outlet></router-outlet>
-    </section>
+  <ul class="nav-links">
+    <li><a [routerLink]="['/represas']"       [routerLinkActive]="'active'">Represas</a></li>
+    <li><a [routerLink]="['/servicios']"      [routerLinkActive]="'active'">Servicios</a></li>
+    <li><a [routerLink]="['/nuestro-equipo']" [routerLinkActive]="'active'">Nuestro Equipo</a></li>
+    <li><a [routerLink]="['/contactenos']"    [routerLinkActive]="'active'">Contáctenos</a></li>
+  </ul>
+
+  <div class="nav-social">
+    <a href="#" target="_blank" class="social-icon" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" class="social-icon" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
   </div>
-  <footer id="">Copy Right JSA</footer>
-</div>
+</nav>
+
+<main id="content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/Logo.png" alt="La Fortuna Fishing" />
+      <span>La Fortuna Fishing</span>
+    </div>
+    <div class="footer-social">
+      <a href="#" target="_blank" class="footer-social-icon" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" target="_blank" class="footer-social-icon" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" target="_blank" class="footer-social-icon" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <p class="footer-copy">© 2024 La Fortuna Fishing · Todos los derechos reservados</p>
+  </div>
+</footer>

@@ -1,0 +1,72 @@
+.equipo-page {
+  font-family: "Yanone", Arial, Helvetica;
+}
+
+.page-title {
+  font-family: "Lobster", cursive;
+  font-size: 2.2rem;
+  color: var(--lima);
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--lima-alpha);
+}
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1.08rem;
+  margin-bottom: 40px;
+}
+
+/* ── Grid de guías ── */
+.guias-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.guia-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  background: rgba(26, 58, 36, 0.42);
+  border: 1px solid var(--lima-alpha);
+  border-radius: 14px;
+  padding: 28px 16px 22px;
+  transition: transform 200ms, box-shadow 200ms;
+}
+.guia-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.42);
+}
+
+/* Avatar circular */
+.guia-foto {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(26, 58, 36, 0.7);
+  border: 3px solid var(--lima);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.guia-foto i {
+  font-size: 3.2rem;
+  color: var(--lima-alpha);
+}
+.guia-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.guia-nombre {
+  font-family: "Lobster", cursive;
+  font-size: 1.2rem;
+  color: var(--blanco);
+  text-align: center;
+  line-height: 1.3;
+}

@@ -4,14 +4,13 @@ import { ErrorComponent } from "./components/error/error.component";
 import { AcercaDeComponent } from "./components/acerca-de/acerca-de.component";
 import { ContactenosComponent } from "./components/contactenos/contactenos.component";
 import { ServiciosComponent } from "./components/servicios/servicios.component";
-import { GaleriaComponent } from "./components/galeria/galeria.component";
+import { NuestroEquipoComponent } from "./components/nuestro-equipo/nuestro-equipo.component";
 
 export const appRoutes: Routes = [
   { path: '', component: AcercaDeComponent },
   { path: 'represas', component: RepresasComponent },
   { path: 'servicios', component: ServiciosComponent },
-  { path: 'galeria', component: GaleriaComponent },
-  { path: 'nuestro-equipo', component: AcercaDeComponent },
+  { path: 'nuestro-equipo', component: NuestroEquipoComponent },
   { path: 'contactenos', component: ContactenosComponent },
   { path: '**', component: ErrorComponent }
 ];
