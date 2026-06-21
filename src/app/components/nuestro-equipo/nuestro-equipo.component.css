@@ -70,3 +70,14 @@
   text-align: center;
   line-height: 1.3;
 }
+
+@media (max-width: 768px) {
+  .guias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .guias-grid {
+    grid-template-columns: 1fr;
+  }
+}

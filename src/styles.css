@@ -203,3 +203,81 @@ body {
   color: rgba(255, 255, 255, 0.45);
   letter-spacing: 0.3px;
 }
+
+/* ══════════════════════════════
+   HAMBURGER BUTTON
+══════════════════════════════ */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--lima);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 6px;
+  line-height: 1;
+}
+
+/* ══════════════════════════════
+   RESPONSIVE — MOBILE
+══════════════════════════════ */
+@media (max-width: 768px) {
+  :root { --nav-height: 64px; }
+
+  /* Navbar mobile */
+  #navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 18px;
+    align-items: center;
+  }
+
+  .nav-brand {
+    flex: 1;
+    padding: 12px 0;
+  }
+  .nav-brand-name { font-size: 1.3rem; }
+  .nav-brand img  { height: 38px; }
+
+  .hamburger { display: flex; }
+
+  /* Links and social hidden by default */
+  .nav-links,
+  .nav-social {
+    display: none;
+    width: 100%;
+  }
+
+  /* Revealed when menu is open */
+  #navbar.menu-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+    border-top: 1px solid var(--lima-alpha);
+  }
+  #navbar.menu-open .nav-links a {
+    padding: 12px 8px;
+    font-size: 1.1rem;
+  }
+  #navbar.menu-open .nav-social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 14px 0 18px;
+    border-top: 1px solid var(--lima-alpha);
+  }
+  #navbar.menu-open .social-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  /* Content */
+  #content {
+    width: 100%;
+    padding: 28px 16px 40px;
+    border-left: none;
+    border-right: none;
+  }
+}

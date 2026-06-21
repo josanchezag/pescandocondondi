@@ -1,14 +1,18 @@
-<nav id="navbar">
-  <a class="nav-brand" [routerLink]="['/']">
+<nav id="navbar" [class.menu-open]="menuOpen">
+  <a class="nav-brand" [routerLink]="['/']" (click)="closeMenu()">
     <img src="assets/img/Logo.png" alt="La Fortuna Fishing" />
     <span class="nav-brand-name">La Fortuna Fishing</span>
   </a>
 
+  <button class="hamburger" (click)="toggleMenu()" aria-label="Menú">
+    <i class="fas" [class.fa-bars]="!menuOpen" [class.fa-times]="menuOpen"></i>
+  </button>
+
   <ul class="nav-links">
-    <li><a [routerLink]="['/represas']"       [routerLinkActive]="'active'">Represas</a></li>
-    <li><a [routerLink]="['/servicios']"      [routerLinkActive]="'active'">Servicios</a></li>
-    <li><a [routerLink]="['/nuestro-equipo']" [routerLinkActive]="'active'">Nuestro Equipo</a></li>
-    <li><a [routerLink]="['/contactenos']"    [routerLinkActive]="'active'">Contáctenos</a></li>
+    <li><a [routerLink]="['/represas']"       [routerLinkActive]="'active'" (click)="closeMenu()">Represas</a></li>
+    <li><a [routerLink]="['/servicios']"      [routerLinkActive]="'active'" (click)="closeMenu()">Servicios</a></li>
+    <li><a [routerLink]="['/nuestro-equipo']" [routerLinkActive]="'active'" (click)="closeMenu()">Nuestro Equipo</a></li>
+    <li><a [routerLink]="['/contactenos']"    [routerLinkActive]="'active'" (click)="closeMenu()">Contáctenos</a></li>
   </ul>
 
   <div class="nav-social">

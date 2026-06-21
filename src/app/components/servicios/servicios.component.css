@@ -140,3 +140,10 @@
   transform: scale(1.05);
   box-shadow: 0 6px 26px rgba(37, 211, 102, 0.45);
 }
+
+@media (max-width: 768px) {
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+  .cotiza-section { padding: 28px 18px; }
+}

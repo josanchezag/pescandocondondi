@@ -124,3 +124,13 @@
   background: rgba(26, 58, 36, 0.7);
   border-color: var(--lima);
 }
+
+@media (max-width: 768px) {
+  .contactos-grid {
+    grid-template-columns: 1fr;
+  }
+  .redes-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

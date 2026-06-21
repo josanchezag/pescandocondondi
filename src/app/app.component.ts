@@ -10,4 +10,13 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'pescandocondondi';
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
 }
